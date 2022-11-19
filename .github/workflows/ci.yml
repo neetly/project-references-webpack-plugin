@@ -1,0 +1,19 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          cache: yarn
+      - run: corepack enable
+
+      - run: yarn --immutable
+      - run: yarn dedupe --check
+
+      - run: yarn lint
+      - run: yarn build
