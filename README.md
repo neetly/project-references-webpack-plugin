@@ -22,4 +22,6 @@ const config: Configuration = {
     plugins: [new ProjectReferencesPlugin()],
   },
 };
+
+export default config;
 ```
