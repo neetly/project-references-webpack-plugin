@@ -4,56 +4,11 @@ import * as jsonc from "jsonc-parser";
 import type { Tsconfig } from "./Tsconfig";
 
 class ProjectReferencesPlugin {
-  private readonly source = "before-file";
+  private readonly source = "file";
   private readonly target = "internal-resolve";
 
   apply(resolver: Resolver) {
     const fs = resolver.fileSystem;
-
-    const resolveSymlink = (
-      path: string,
-      callback: (error: unknown, result: string | null) => void,
-    ) => {
-      fs.readlink(path, (error, result) => {
-        if (error?.code === "EINVAL") {
-          return callback(null, path);
-        }
-
-        if (error || !result) {
-          return callback(error, null);
-        }
-
-        callback(
-          null,
-          resolver.join(resolver.join(path, ".."), result.toString()),
-        );
-      });
-    };
-
-    const readTsconfig = (
-      path: string,
-      resolveContext: ResolveContext,
-      callback: (error: unknown, tsconfig: Tsconfig | null) => void,
-    ) => {
-      fs.readFile(path, (error, result) => {
-        if (error?.code === "ENOENT") {
-          resolveContext.missingDependencies?.add(path);
-        }
-
-        if (error || !result) {
-          return callback(error, null);
-        }
-
-        resolveContext.fileDependencies?.add(path);
-
-        const tsconfig = jsonc.parse(result.toString()) as unknown;
-        if (!tsconfig) {
-          return callback(null, null);
-        }
-
-        return callback(null, tsconfig as Tsconfig);
-      });
-    };
 
     resolver
       .getHook(this.source)
@@ -107,6 +62,51 @@ class ProjectReferencesPlugin {
           });
         },
       );
+
+    const resolveSymlink = (
+      path: string,
+      callback: (error: unknown, result: string | null) => void,
+    ) => {
+      fs.readlink(path, (error, result) => {
+        if (error?.code === "EINVAL") {
+          return callback(null, path);
+        }
+
+        if (error || !result) {
+          return callback(error, null);
+        }
+
+        callback(
+          null,
+          resolver.join(resolver.join(path, ".."), result.toString()),
+        );
+      });
+    };
+
+    const readTsconfig = (
+      path: string,
+      resolveContext: ResolveContext,
+      callback: (error: unknown, tsconfig: Tsconfig | null) => void,
+    ) => {
+      fs.readFile(path, (error, result) => {
+        if (error?.code === "ENOENT") {
+          resolveContext.missingDependencies?.add(path);
+        }
+
+        if (error || !result) {
+          return callback(error, null);
+        }
+
+        resolveContext.fileDependencies?.add(path);
+
+        const tsconfig = jsonc.parse(result.toString()) as unknown;
+        if (!tsconfig) {
+          return callback(null, null);
+        }
+
+        return callback(null, tsconfig as Tsconfig);
+      });
+    };
   }
 }
 
