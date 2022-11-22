@@ -8,6 +8,7 @@ yarn add --dev project-references-webpack-plugin
 ```
 
 ```ts
+// <root>/webpack.config.ts
 import { ProjectReferencesPlugin } from "project-references-webpack-plugin";
 import type { Configuration } from "webpack";
 
