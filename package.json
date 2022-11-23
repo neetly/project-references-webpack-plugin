@@ -30,7 +30,7 @@
     "@types/node": "^18.11.9",
     "enhanced-resolve": "^5.11.0",
     "eslint": "^8.28.0",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.0",
     "typescript": "^4.9.3"
   },
   "packageManager": "yarn@4.0.0-rc.31"
