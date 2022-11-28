@@ -27,6 +27,31 @@ const config: Configuration = {
 export default config;
 ```
 
+## Example
+
+```ts
+import "foobar"; // => packages/foobar/src/index.ts
+```
+
+```jsonc
+// packages/foobar/package.json
+{
+  "name": "foobar",
+  "main": "./lib/index.js"
+}
+```
+
+```jsonc
+// packages/foobar/tsconfig.json
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./lib"
+  }
+}
+```
+
 ## Credit
 
-This project was inspired by [webpack-project-references-alias](https://github.com/microsoft/webpack-project-references-alias).
+This project was inspired by
+[webpack-project-references-alias](https://github.com/microsoft/webpack-project-references-alias).
