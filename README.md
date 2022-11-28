@@ -8,7 +8,7 @@ yarn add --dev project-references-webpack-plugin
 ```
 
 ```ts
-// <root>/webpack.config.ts
+// webpack.config.ts
 import { ProjectReferencesPlugin } from "project-references-webpack-plugin";
 import type { Configuration } from "webpack";
 
@@ -26,3 +26,7 @@ const config: Configuration = {
 
 export default config;
 ```
+
+## Credit
+
+This project was inspired by [webpack-project-references-alias](https://github.com/microsoft/webpack-project-references-alias).
