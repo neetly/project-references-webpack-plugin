@@ -45,7 +45,7 @@ class ProjectReferencesPlugin {
                 rootDir = resolver.join(descriptionFileRoot, rootDir);
                 outDir = resolver.join(descriptionFileRoot, outDir);
 
-                if (!path.startsWith(outDir)) {
+                if (rootDir === outDir || !path.startsWith(outDir)) {
                   return callback();
                 }
 
