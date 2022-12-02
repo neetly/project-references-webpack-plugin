@@ -30,19 +30,19 @@ export default config;
 ## Example
 
 ```ts
-import "foobar"; // => packages/foobar/src/index.ts
+import "library"; // => packages/library/src/index.ts
 ```
 
 ```jsonc
-// packages/foobar/package.json
+// packages/library/package.json
 {
-  "name": "foobar",
+  "name": "library",
   "main": "./lib/index.js"
 }
 ```
 
 ```jsonc
-// packages/foobar/tsconfig.json
+// packages/library/tsconfig.json
 {
   "compilerOptions": {
     "rootDir": "./src",
