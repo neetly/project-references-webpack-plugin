@@ -49,11 +49,15 @@ class ProjectReferencesPlugin {
                   return callback();
                 }
 
-                const newPath = path.replace(outDir, rootDir);
+                const newRequest = path.replace(outDir, rootDir);
                 resolver.doResolve(
                   resolver.getHook(this.target),
-                  { ...request, request: newPath },
-                  `source redirected from "${path}" to "${newPath}"`,
+                  {
+                    ...request,
+                    path: descriptionFileRoot,
+                    request: newRequest,
+                  },
+                  `source redirected from "${path}" to "${newRequest}"`,
                   resolveContext,
                   callback,
                 );
