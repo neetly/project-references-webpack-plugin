@@ -27,7 +27,7 @@
     "@neetly/babel-preset": "^0.2.2",
     "@neetly/eslint-config": "^0.3.2",
     "@neetly/tsconfig": "^0.2.0",
-    "@types/node": "^18.11.10",
+    "@types/node": "^18.11.11",
     "enhanced-resolve": "^5.12.0",
     "eslint": "^8.29.0",
     "prettier": "^2.8.0",
