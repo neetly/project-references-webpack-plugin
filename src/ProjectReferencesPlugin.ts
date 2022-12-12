@@ -1,7 +1,7 @@
 import type { ResolveContext, Resolver } from "enhanced-resolve";
 import * as jsonc from "jsonc-parser";
 
-import type { Tsconfig } from "./Tsconfig";
+import type { TSConfig } from "./types/TSConfig";
 
 class ProjectReferencesPlugin {
   private readonly source = "file";
@@ -29,7 +29,7 @@ class ProjectReferencesPlugin {
               return callback();
             }
 
-            readTsconfig(
+            readTSConfig(
               resolver.join(descriptionFileRoot, "tsconfig.json"),
               resolveContext,
               (error, tsconfig) => {
@@ -87,10 +87,10 @@ class ProjectReferencesPlugin {
       });
     };
 
-    const readTsconfig = (
+    const readTSConfig = (
       path: string,
       resolveContext: ResolveContext,
-      callback: (error: unknown, tsconfig: Tsconfig | null) => void,
+      callback: (error: unknown, tsconfig: TSConfig | null) => void,
     ) => {
       fs.readFile(path, (error, result) => {
         if (error?.code === "ENOENT") {
@@ -108,7 +108,7 @@ class ProjectReferencesPlugin {
           return callback(null, null);
         }
 
-        return callback(null, tsconfig as Tsconfig);
+        return callback(null, tsconfig as TSConfig);
       });
     };
   }

@@ -1,8 +1,8 @@
-type Tsconfig = {
+type TSConfig = {
   compilerOptions?: {
     rootDir?: string;
     outDir?: string;
   };
 };
 
-export type { Tsconfig };
+export type { TSConfig };
