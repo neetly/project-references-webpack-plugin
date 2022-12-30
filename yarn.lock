@@ -1343,12 +1343,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.8.4":
-  version: 7.20.1
-  resolution: "@babel/runtime@npm:7.20.1"
+"@babel/runtime-corejs3@npm:^7.10.2":
+  version: 7.20.7
+  resolution: "@babel/runtime-corejs3@npm:7.20.7"
   dependencies:
-    regenerator-runtime: "npm:^0.13.10"
-  checksum: dab09323346ef2e0db0571a8d9af3bf01d290f0e97100da0874106e4aff794292755716745b593153b9436dc7471e059391cc0bd7ec9e2ec55f03c462247391e
+    core-js-pure: "npm:^3.25.1"
+    regenerator-runtime: "npm:^0.13.11"
+  checksum: f95f516311261b349d0031c2eedf1824c56dfa658a26a62da404bc04911168a2acc0174d1c71605f5ba9dcf54b8ae753c8fbc3528d8bb89a9d5f1352e3a88b58
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.8.4":
+  version: 7.20.7
+  resolution: "@babel/runtime@npm:7.20.7"
+  dependencies:
+    regenerator-runtime: "npm:^0.13.11"
+  checksum: b22b904439569fa3b28627fc398d9bb9619f14bc9165cdf63ab5fa248660a10104ae81514607cbe55e4e26fe0d4048a89263f47f1f3da1e37f8e670b95acf244
   languageName: node
   linkType: hard
 
@@ -1517,15 +1527,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@neetly/eslint-config@npm:^0.3.3":
-  version: 0.3.3
-  resolution: "@neetly/eslint-config@npm:0.3.3"
+"@neetly/eslint-config@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@neetly/eslint-config@npm:0.4.0"
   dependencies:
     "@rushstack/eslint-patch": "npm:^1.2.0"
     "@typescript-eslint/eslint-plugin": "npm:^5.47.1"
     "@typescript-eslint/parser": "npm:^5.47.1"
     eslint-import-resolver-typescript: "npm:^3.5.2"
     eslint-plugin-import: "npm:^2.26.0"
+    eslint-plugin-jsx-a11y: "npm:^6.6.1"
     eslint-plugin-react: "npm:^7.31.11"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-simple-import-sort: "npm:^8.0.0"
@@ -1533,7 +1544,7 @@ __metadata:
   peerDependencies:
     eslint: "*"
     typescript: "*"
-  checksum: 69568d7afac1a6cc18437eaff78359f9588c89e3a729ea531e972d2ee66dfbc938ae0943373e3e33dd3a74f6483c7e14accfe3874ba696621d39883dad46f862
+  checksum: f4a379bf3596547934b5fd2e2a31f856c3ca38b4678047937ee2cf66b90871cbaba7eca42e9579fed8cc01032b3f41f2a00745a3c128d9c9ce2bdab8d10066ce
   languageName: node
   linkType: hard
 
@@ -1909,6 +1920,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"aria-query@npm:^4.2.2":
+  version: 4.2.2
+  resolution: "aria-query@npm:4.2.2"
+  dependencies:
+    "@babel/runtime": "npm:^7.10.2"
+    "@babel/runtime-corejs3": "npm:^7.10.2"
+  checksum: ac25b39935ebf70a61e8d821a7f87832a458fff7d769a705ec5f9a26018667bc48b6c0e1fa9536c198abfc3e6fac73de8631c4690d930a84938598dc7596497a
+  languageName: node
+  linkType: hard
+
 "array-includes@npm:^3.1.4, array-includes@npm:^3.1.5, array-includes@npm:^3.1.6":
   version: 3.1.6
   resolution: "array-includes@npm:3.1.6"
@@ -1963,6 +1984,27 @@ __metadata:
     es-shim-unscopables: "npm:^1.0.0"
     get-intrinsic: "npm:^1.1.3"
   checksum: e86770e9d6500f44eb4da8d1ee278c39d8b8d3963b7a6ca3282d96a7b017e87ae20410b74747696fd2ddd621e481bf2fde9aa1ed1718592a09534b00ffb51cb5
+  languageName: node
+  linkType: hard
+
+"ast-types-flow@npm:^0.0.7":
+  version: 0.0.7
+  resolution: "ast-types-flow@npm:0.0.7"
+  checksum: f6f0fecb7cd2a31b964582e4a98c494e388041a6925e01e1a2d67a4c450e345d7dbd4ca9e6aaee493018ed03ecf23ce4456e4077b1a52c5c8eae35beb71111ae
+  languageName: node
+  linkType: hard
+
+"axe-core@npm:^4.4.3":
+  version: 4.6.1
+  resolution: "axe-core@npm:4.6.1"
+  checksum: 2a92079fb63a220f81dcc4c403d76210b240a0a0221b2e152d080ea438e39f097708e472bcd60089ae39a88d6751eb3bee7c2c645b37f5e7359a69f7a98d1ae5
+  languageName: node
+  linkType: hard
+
+"axobject-query@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "axobject-query@npm:2.2.0"
+  checksum: 0c181585757b660a35ed3c5de79e17d423c60b68156660c5d7f59f0029c1d2b63f5793aadc4f3902c33736e26c42722c589defeda5756d08eac439772e63e4ad
   languageName: node
   linkType: hard
 
@@ -2263,6 +2305,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core-js-pure@npm:^3.25.1":
+  version: 3.27.1
+  resolution: "core-js-pure@npm:3.27.1"
+  checksum: 7edb734c3b77c6ee118b699f195aae59abd72e6ce1a0e4454ac32b2390c92c6b7f3fcee0b3be002e64d84a73d2020444e378b145b0bac8eb00d3bf97ab4261c1
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
@@ -2271,6 +2320,13 @@ __metadata:
     shebang-command: "npm:^2.0.0"
     which: "npm:^2.0.1"
   checksum: 37ec685f91f04d4719892f305fa6f632aae256df7f2f3f98d5c36f2197651ad7b77851aaa2d397d19a9555f0fb89fa18f9bb3ff4b440535cc0fb4fe0a72004b9
+  languageName: node
+  linkType: hard
+
+"damerau-levenshtein@npm:^1.0.8":
+  version: 1.0.8
+  resolution: "damerau-levenshtein@npm:1.0.8"
+  checksum: a405d7fbbd9316fdaecedd50c42d27ed2d669b687e62813d785316de9f9c171a5797de8efda92292f62364a0966edad2581fc0029a27457ce6ec7f3936ad0437
   languageName: node
   linkType: hard
 
@@ -2380,6 +2436,13 @@ __metadata:
   version: 8.0.0
   resolution: "emoji-regex@npm:8.0.0"
   checksum: 0b84c9059a3f051e3da79112ee450f22bc8466dde2a7e09a0b1fc4eff3b98183596e6e2704d5356266851e2a013d95467421eb81c36408fbab1aeb3fc5e4764f
+  languageName: node
+  linkType: hard
+
+"emoji-regex@npm:^9.2.2":
+  version: 9.2.2
+  resolution: "emoji-regex@npm:9.2.2"
+  checksum: ef0642d76f5116a04296a85ec167696b91ca8a1373d3cd13ec3acfb0f6a77d4d1c6ce94192ab31f8bad5ca69fbd01b556638fdf389128fea48fb5f6c2c754b45
   languageName: node
   linkType: hard
 
@@ -2558,6 +2621,29 @@ __metadata:
   peerDependencies:
     eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8
   checksum: d6509c7e368481d46e8213ffb341085a0c9dd83cdf0a96f28a69701ff571a80453532a7a68a60b29c8f74d8d33dbf049c2c2fff4592104cf6bf6ed968fc4ead1
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-jsx-a11y@npm:^6.6.1":
+  version: 6.6.1
+  resolution: "eslint-plugin-jsx-a11y@npm:6.6.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.18.9"
+    aria-query: "npm:^4.2.2"
+    array-includes: "npm:^3.1.5"
+    ast-types-flow: "npm:^0.0.7"
+    axe-core: "npm:^4.4.3"
+    axobject-query: "npm:^2.2.0"
+    damerau-levenshtein: "npm:^1.0.8"
+    emoji-regex: "npm:^9.2.2"
+    has: "npm:^1.0.3"
+    jsx-ast-utils: "npm:^3.3.2"
+    language-tags: "npm:^1.0.5"
+    minimatch: "npm:^3.1.2"
+    semver: "npm:^6.3.0"
+  peerDependencies:
+    eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
+  checksum: 4feacb2da9dcf74c8599deb488c760d764f8503cf771370a836d9fb5050ba096e7fd9f2dbf86f882bca21ed73b346b10ded320d5cf1f1eed8b8eb85d4b424626
   languageName: node
   linkType: hard
 
@@ -3595,13 +3681,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsx-ast-utils@npm:^2.4.1 || ^3.0.0":
+"jsx-ast-utils@npm:^2.4.1 || ^3.0.0, jsx-ast-utils@npm:^3.3.2":
   version: 3.3.3
   resolution: "jsx-ast-utils@npm:3.3.3"
   dependencies:
     array-includes: "npm:^3.1.5"
     object.assign: "npm:^4.1.3"
   checksum: cb1820fa7f27b2d58a39a236ed5935b5456cc63cd55d134157977e852c50025a13aeaca8a35d1658200bdaf5b1424fc65eaaba5d1aae0f4aa11abf2be7b9dce5
+  languageName: node
+  linkType: hard
+
+"language-subtag-registry@npm:^0.3.20":
+  version: 0.3.22
+  resolution: "language-subtag-registry@npm:0.3.22"
+  checksum: 5d97350e417c3e06add9d30a7d39f40885578fa06210e9e07ca2eb527b580a16842bfc76ab1a71a7891d3f908a2928d335a8d8712f0049a183ebe2d4d60fee56
+  languageName: node
+  linkType: hard
+
+"language-tags@npm:^1.0.5":
+  version: 1.0.7
+  resolution: "language-tags@npm:1.0.7"
+  dependencies:
+    language-subtag-registry: "npm:^0.3.20"
+  checksum: 85b22e0875b5853dce4dd2d1ebac7c132d082a41916ea79999b0c9be7fb99c9cbc819c0db663aa692f5e020bc3acd4d7d0b5451684006431657c285efde51b21
   languageName: node
   linkType: hard
 
@@ -4239,7 +4341,7 @@ __metadata:
     "@babel/cli": "npm:^7.20.7"
     "@babel/core": "npm:^7.20.7"
     "@neetly/babel-preset": "npm:^0.2.2"
-    "@neetly/eslint-config": "npm:^0.3.3"
+    "@neetly/eslint-config": "npm:^0.4.0"
     "@neetly/tsconfig": "npm:^0.2.0"
     "@types/node": "npm:^18.11.18"
     enhanced-resolve: "npm:^5.12.0"
@@ -4358,7 +4460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"regenerator-runtime@npm:^0.13.10":
+"regenerator-runtime@npm:^0.13.11":
   version: 0.13.11
   resolution: "regenerator-runtime@npm:0.13.11"
   checksum: 0485db63ce47760e28329590cb9f8b208365d076dbf2edaa32e551a7c0451fc6f7557b225268422c960ffa4fbc6ff86d63d6a747aacbf6b10ed6a747b432e3c8
