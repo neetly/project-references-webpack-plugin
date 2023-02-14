@@ -29,7 +29,7 @@
     "@neetly/tsconfig": "^0.2.0",
     "@types/node": "^18.13.0",
     "enhanced-resolve": "^5.12.0",
-    "eslint": "^8.33.0",
+    "eslint": "^8.34.0",
     "prettier": "^2.8.4",
     "typescript": "^4.9.5"
   },
