@@ -1592,12 +1592,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@neetly/tsconfig@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "@neetly/tsconfig@npm:0.2.0"
+"@neetly/tsconfig@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@neetly/tsconfig@npm:0.3.0"
   peerDependencies:
     typescript: "*"
-  checksum: f8dce4d10376eeaf9ecfa5e9856dd59d62a964c43173edc097ae582e3955326b9409a58749bef336bf3e85dba49874cd04a94467a4e49cfd17e245c8cf4d50c7
+  checksum: 93e2484fefcfde281b12eca401bd51e5eb8de5afc164f26c5ae3c3e53581b1b88ad5b7f9b282e167285764efb8cbf1d80b7027da7e29e8887a2fe3c7e74da88d
   languageName: node
   linkType: hard
 
@@ -4387,7 +4387,7 @@ __metadata:
     "@babel/core": "npm:^7.21.3"
     "@neetly/babel-preset": "npm:^0.3.0"
     "@neetly/eslint-config": "npm:^0.4.0"
-    "@neetly/tsconfig": "npm:^0.2.0"
+    "@neetly/tsconfig": "npm:^0.3.0"
     "@types/node": "npm:^18.15.3"
     enhanced-resolve: "npm:^5.12.0"
     eslint: "npm:^8.36.0"
