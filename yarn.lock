@@ -4370,12 +4370,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.8.6":
-  version: 2.8.6
-  resolution: "prettier@npm:2.8.6"
+"prettier@npm:^2.8.7":
+  version: 2.8.7
+  resolution: "prettier@npm:2.8.7"
   bin:
     prettier: bin-prettier.js
-  checksum: 349cf6e60e9e816aedede90186fbd77a169d81ef55ae319e9528012ea610dde8f96d93188435153d2c92772ee9ff6869def1035e2beb7ece779da4f7ca8ee532
+  checksum: ec15b2e0a2a34a4987cca4ee72b2df56c7f4a4c62322d9a0f3c9efccb2cc0e3efdb791bb2764f2268e69e05946dc72108e5b5957d4bb2c1a41a11733b8b09153
   languageName: node
   linkType: hard
 
@@ -4392,7 +4392,7 @@ __metadata:
     enhanced-resolve: "npm:^5.12.0"
     eslint: "npm:^8.36.0"
     jsonc-parser: "npm:^3.2.0"
-    prettier: "npm:^2.8.6"
+    prettier: "npm:^2.8.7"
     typescript: "npm:^5.0.2"
   languageName: unknown
   linkType: soft
