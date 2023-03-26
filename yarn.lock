@@ -1697,10 +1697,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^18.15.5":
-  version: 18.15.5
-  resolution: "@types/node@npm:18.15.5"
-  checksum: b046d8e4ebb94c1f811743d8be63b7e76fa03db9117ae1a7bc4589fddbb13b70c24fd5d2d4f674032b8a0ceb4db2e74725d241ccdf99f8ec61e357de2e2bbebb
+"@types/node@npm:^18.15.10":
+  version: 18.15.10
+  resolution: "@types/node@npm:18.15.10"
+  checksum: 7ff3edc6148a703debc568f512899246dded5c41c9d2c495fcac01d7dead1771661098891eda75e9f5bb12df8ed6b9b7a7d814606ac1a0e2e00682ef64d2beca
   languageName: node
   linkType: hard
 
@@ -4388,7 +4388,7 @@ __metadata:
     "@neetly/babel-preset": "npm:^0.3.0"
     "@neetly/eslint-config": "npm:^0.4.0"
     "@neetly/tsconfig": "npm:^0.3.0"
-    "@types/node": "npm:^18.15.5"
+    "@types/node": "npm:^18.15.10"
     enhanced-resolve: "npm:^5.12.0"
     eslint: "npm:^8.36.0"
     jsonc-parser: "npm:^3.2.0"
