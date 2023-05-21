@@ -2507,13 +2507,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"enhanced-resolve@npm:^5.12.0, enhanced-resolve@npm:^5.13.0":
-  version: 5.13.0
-  resolution: "enhanced-resolve@npm:5.13.0"
+"enhanced-resolve@npm:^5.12.0, enhanced-resolve@npm:^5.14.0":
+  version: 5.14.0
+  resolution: "enhanced-resolve@npm:5.14.0"
   dependencies:
     graceful-fs: "npm:^4.2.4"
     tapable: "npm:^2.2.0"
-  checksum: ff54c25302309241f47d9555b1b6e5a315007c7e1178566ec02f538a322971bf6f4fe08170f7e7b98bafe3fccc49fa303ecd44ebf123090210d0c5b13b6140ae
+  checksum: 802065e152816ed9ab48de778b14f08eff74287e00903c9e451010445ca4b92c0de24db3a063ea0914df5c796e8703e4c44117ffe1e64bb2c15979d361cbafd8
   languageName: node
   linkType: hard
 
@@ -4494,7 +4494,7 @@ __metadata:
     "@neetly/eslint-config": "npm:^0.5.0"
     "@neetly/tsconfig": "npm:^0.3.0"
     "@types/node": "npm:^20.2.1"
-    enhanced-resolve: "npm:^5.13.0"
+    enhanced-resolve: "npm:^5.14.0"
     eslint: "npm:^8.41.0"
     jsonc-parser: "npm:^3.2.0"
     prettier: "npm:^2.8.8"
