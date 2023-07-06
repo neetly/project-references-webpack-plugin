@@ -65,38 +65,38 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/core@npm:^7.22.6":
-  version: 7.22.6
-  resolution: "@babel/core@npm:7.22.6"
+"@babel/core@npm:^7.22.8":
+  version: 7.22.8
+  resolution: "@babel/core@npm:7.22.8"
   dependencies:
     "@ampproject/remapping": "npm:^2.2.0"
     "@babel/code-frame": "npm:^7.22.5"
-    "@babel/generator": "npm:^7.22.5"
+    "@babel/generator": "npm:^7.22.7"
     "@babel/helper-compilation-targets": "npm:^7.22.6"
     "@babel/helper-module-transforms": "npm:^7.22.5"
     "@babel/helpers": "npm:^7.22.6"
-    "@babel/parser": "npm:^7.22.6"
+    "@babel/parser": "npm:^7.22.7"
     "@babel/template": "npm:^7.22.5"
-    "@babel/traverse": "npm:^7.22.6"
+    "@babel/traverse": "npm:^7.22.8"
     "@babel/types": "npm:^7.22.5"
     "@nicolo-ribaudo/semver-v6": "npm:^6.3.3"
     convert-source-map: "npm:^1.7.0"
     debug: "npm:^4.1.0"
     gensync: "npm:^1.0.0-beta.2"
     json5: "npm:^2.2.2"
-  checksum: e4669022b3d5934c3afe35c5976cdd20fc060f84d790b3c945ad7befd9930124703ed279727404f10254e9462bb449339bc7241b426d1c754a30332dea6013a2
+  checksum: d506ac42eaf2f7c3c190cc91a1413bb9ae5c067e06268fa962cb5fd0e67fc0feb48c7fa51527da378e3cc3a92a13a3420bae877df89207d880c839b6bb73e662
   languageName: node
   linkType: hard
 
-"@babel/generator@npm:^7.22.5":
-  version: 7.22.5
-  resolution: "@babel/generator@npm:7.22.5"
+"@babel/generator@npm:^7.22.7":
+  version: 7.22.7
+  resolution: "@babel/generator@npm:7.22.7"
   dependencies:
     "@babel/types": "npm:^7.22.5"
     "@jridgewell/gen-mapping": "npm:^0.3.2"
     "@jridgewell/trace-mapping": "npm:^0.3.17"
     jsesc: "npm:^2.5.1"
-  checksum: 9/752010702bf332ebcde03d3d88da4c6c95093dbb621f7d1bce830631f629fc061aad7520d1797a5c8a514c8374f21c0fa02bcae3bb4999cd9df9ed5d652f85f6
+  checksum: 7eb106916d782d397d0d4370bb4b23229229481218693a55f3fc0b756d4e9dc39cee41872f1735decb0b34be8dbb98c4488d5f7abbf6e40826d5dcac045b1f12
   languageName: node
   linkType: hard
 
@@ -375,12 +375,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/parser@npm:^7.22.5, @babel/parser@npm:^7.22.6":
-  version: 7.22.6
-  resolution: "@babel/parser@npm:7.22.6"
+"@babel/parser@npm:^7.22.5, @babel/parser@npm:^7.22.7":
+  version: 7.22.7
+  resolution: "@babel/parser@npm:7.22.7"
   bin:
     parser: ./bin/babel-parser.js
-  checksum: efc4ab2ed9b765ea7fa234b3e9b5cb10d81554279e9337fc82b6ebc2de720a40148cc29e18850a0e8679d48367e70f45c76f5197e254528535121615da43496b
+  checksum: d2bdf212644c39de58f1216540ec5aca4a05ffbec07c904eaaef8575dd9546b55345b91dcc0d306be4adbb717401ce321027bac7e2f7babfd66794c96243bb79
   languageName: node
   linkType: hard
 
@@ -1399,21 +1399,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/traverse@npm:^7.19.0, @babel/traverse@npm:^7.20.7, @babel/traverse@npm:^7.22.5, @babel/traverse@npm:^7.22.6":
-  version: 7.22.6
-  resolution: "@babel/traverse@npm:7.22.6"
+"@babel/traverse@npm:^7.19.0, @babel/traverse@npm:^7.20.7, @babel/traverse@npm:^7.22.5, @babel/traverse@npm:^7.22.6, @babel/traverse@npm:^7.22.8":
+  version: 7.22.8
+  resolution: "@babel/traverse@npm:7.22.8"
   dependencies:
     "@babel/code-frame": "npm:^7.22.5"
-    "@babel/generator": "npm:^7.22.5"
+    "@babel/generator": "npm:^7.22.7"
     "@babel/helper-environment-visitor": "npm:^7.22.5"
     "@babel/helper-function-name": "npm:^7.22.5"
     "@babel/helper-hoist-variables": "npm:^7.22.5"
     "@babel/helper-split-export-declaration": "npm:^7.22.6"
-    "@babel/parser": "npm:^7.22.6"
+    "@babel/parser": "npm:^7.22.7"
     "@babel/types": "npm:^7.22.5"
     debug: "npm:^4.1.0"
     globals: "npm:^11.1.0"
-  checksum: 2806f03033df822e987216d74fd1cbbe91aabeaa7f7e65cc3e6396e591ba1ef51f48e6c46a372cd0cda3258020791e2051d80b2bac542a19c8eb9c50d504bee4
+  checksum: 839014824c210388ed46f92bf5265522bd5bbb4a9a03c700f9d79b151bdd0aa077c2f6448a0cef41132188cc2bc6d8cdcad98a297ba59983401e882bdc256b1f
   languageName: node
   linkType: hard
 
@@ -4499,7 +4499,7 @@ __metadata:
   resolution: "project-references-webpack-plugin@workspace:."
   dependencies:
     "@babel/cli": "npm:^7.22.6"
-    "@babel/core": "npm:^7.22.6"
+    "@babel/core": "npm:^7.22.8"
     "@neetly/babel-preset": "npm:^0.3.0"
     "@neetly/eslint-config": "npm:^0.5.1"
     "@neetly/tsconfig": "npm:^0.3.0"
