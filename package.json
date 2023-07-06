@@ -25,7 +25,7 @@
     "@babel/cli": "^7.22.6",
     "@babel/core": "^7.22.6",
     "@neetly/babel-preset": "^0.3.0",
-    "@neetly/eslint-config": "^0.5.0",
+    "@neetly/eslint-config": "^0.5.1",
     "@neetly/tsconfig": "^0.3.0",
     "@types/node": "^20.4.0",
     "enhanced-resolve": "^5.15.0",
