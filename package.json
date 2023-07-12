@@ -22,8 +22,8 @@
     "jsonc-parser": "^3.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.22.6",
-    "@babel/core": "^7.22.8",
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
     "@neetly/babel-preset": "^0.3.0",
     "@neetly/eslint-config": "^0.5.1",
     "@neetly/tsconfig": "^0.3.0",
