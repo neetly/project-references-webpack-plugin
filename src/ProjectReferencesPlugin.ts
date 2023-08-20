@@ -16,37 +16,43 @@ class ProjectReferencesPlugin {
         "ProjectReferencesPlugin",
         (request, resolveContext, callback) => {
           const { path, descriptionFileRoot } = request;
-          if (!path || !descriptionFileRoot) {
-            return callback();
+          if (path === false || descriptionFileRoot === undefined) {
+            callback();
+            return;
           }
 
           resolveSymlink(descriptionFileRoot, (error, result) => {
-            if (error || !result) {
-              return callback();
+            if (error !== null || result === undefined) {
+              callback();
+              return;
             }
 
             if (/[/\\]node_modules[/\\]/.test(result)) {
-              return callback();
+              callback();
+              return;
             }
 
             readTSConfig(
               resolver.join(descriptionFileRoot, "tsconfig.json"),
               resolveContext,
               (error, tsconfig) => {
-                if (error || !tsconfig?.compilerOptions) {
-                  return callback();
+                if (error !== null || !tsconfig?.compilerOptions) {
+                  callback();
+                  return;
                 }
 
                 let { rootDir, outDir } = tsconfig.compilerOptions;
-                if (!rootDir || !outDir) {
-                  return callback();
+                if (rootDir === undefined || outDir === undefined) {
+                  callback();
+                  return;
                 }
 
                 rootDir = resolver.join(descriptionFileRoot, rootDir);
                 outDir = resolver.join(descriptionFileRoot, outDir);
 
                 if (rootDir === outDir || !path.startsWith(outDir)) {
-                  return callback();
+                  callback();
+                  return;
                 }
 
                 const newRequest = path.replace(outDir, rootDir);
@@ -69,15 +75,21 @@ class ProjectReferencesPlugin {
 
     const resolveSymlink = (
       path: string,
-      callback: (error: unknown, result: string | null) => void,
+      callback: (error: Error | null, result: string | undefined) => void,
     ) => {
       fs.readlink(path, (error, result) => {
-        if (error?.code === "EINVAL") {
-          return callback(null, path);
+        if (error) {
+          if (error.code === "EINVAL") {
+            callback(null, path);
+          } else {
+            callback(error, undefined);
+          }
+          return;
         }
 
-        if (error || !result) {
-          return callback(error, null);
+        if (result === undefined) {
+          callback(null, undefined);
+          return;
         }
 
         callback(
@@ -90,25 +102,27 @@ class ProjectReferencesPlugin {
     const readTSConfig = (
       path: string,
       resolveContext: ResolveContext,
-      callback: (error: unknown, tsconfig: TSConfig | null) => void,
+      callback: (error: Error | null, tsconfig: TSConfig | null) => void,
     ) => {
       fs.readFile(path, (error, result) => {
-        if (error?.code === "ENOENT") {
-          resolveContext.missingDependencies?.add(path);
+        if (error) {
+          if (error.code === "ENOENT") {
+            resolveContext.missingDependencies?.add(path);
+          }
+
+          callback(error, null);
+          return;
         }
 
-        if (error || !result) {
-          return callback(error, null);
+        if (result === undefined) {
+          callback(null, null);
+          return;
         }
 
         resolveContext.fileDependencies?.add(path);
 
-        const tsconfig = jsonc.parse(result.toString()) as unknown;
-        if (!tsconfig) {
-          return callback(null, null);
-        }
-
-        return callback(null, tsconfig as TSConfig);
+        const tsconfig = jsonc.parse(result.toString()) as TSConfig;
+        callback(null, tsconfig);
       });
     };
   }
