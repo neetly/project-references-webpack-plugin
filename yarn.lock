@@ -1461,10 +1461,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:^8.47.0":
-  version: 8.47.0
-  resolution: "@eslint/js@npm:8.47.0"
-  checksum: fb5b1377f0d7a8299c65baa856b23a7976165b0fc269b6220fd8e6dfb7fa29de83528b16226ccbe3625f24082a53ec8ca19d75d89f057478f17871b4fcdb32a0
+"@eslint/js@npm:8.49.0":
+  version: 8.49.0
+  resolution: "@eslint/js@npm:8.49.0"
+  checksum: 40b4255866161e16b09eae1830c8ff7379276659ee7ce039e4708bcf3c5a5fd8b95418d32c355294e6c738f23ab42f3e3a55100dffb389edd5d5233ca47c01b3
   languageName: node
   linkType: hard
 
@@ -1475,14 +1475,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@humanwhocodes/config-array@npm:^0.11.10":
-  version: 0.11.10
-  resolution: "@humanwhocodes/config-array@npm:0.11.10"
+"@humanwhocodes/config-array@npm:^0.11.11":
+  version: 0.11.11
+  resolution: "@humanwhocodes/config-array@npm:0.11.11"
   dependencies:
     "@humanwhocodes/object-schema": "npm:^1.2.1"
     debug: "npm:^4.1.1"
     minimatch: "npm:^3.0.5"
-  checksum: 9e307a49a5baa28beb243d2c14c145f288fccd6885f4c92a9055707057ec40980242256b2a07c976cfa6c75f7081da111a40a9844d1ca8daeff2302f8b640e76
+  checksum: 4195f68e485f7d1a7c95cf0f126cc41f7223eeda2f1b46b893123c99b35bb76145c37d25e2ba452d54815ed69bb656c0ce9e343ffa984470c08afa6e82a4713f
   languageName: node
   linkType: hard
 
@@ -2929,15 +2929,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.47.0":
-  version: 8.47.0
-  resolution: "eslint@npm:8.47.0"
+"eslint@npm:^8.49.0":
+  version: 8.49.0
+  resolution: "eslint@npm:8.49.0"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@eslint-community/regexpp": "npm:^4.6.1"
     "@eslint/eslintrc": "npm:^2.1.2"
-    "@eslint/js": "npm:^8.47.0"
-    "@humanwhocodes/config-array": "npm:^0.11.10"
+    "@eslint/js": "npm:8.49.0"
+    "@humanwhocodes/config-array": "npm:^0.11.11"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
     "@nodelib/fs.walk": "npm:^1.2.8"
     ajv: "npm:^6.12.4"
@@ -2972,7 +2972,7 @@ __metadata:
     text-table: "npm:^0.2.0"
   bin:
     eslint: bin/eslint.js
-  checksum: b6c69f2ca34990027cfe7d46c956672583549b2a13d118791ee60ad1fa3e5057ab7781b27c9b0ea76dc67f7e980b33e106ad07d54c83464ab9ba03d2ec832f36
+  checksum: 8d6985a8d60379ea714ad35d7a3d8762ac8c37b986c615e9a7c245794faddf68f61f997ba6f5f903d440e92065a56a4f7832a45adc2d4fc6e977026782f25835
   languageName: node
   linkType: hard
 
@@ -4592,7 +4592,7 @@ __metadata:
     "@neetly/tsconfig": "npm:^0.3.0"
     "@types/node": "npm:^20.5.1"
     enhanced-resolve: "npm:^5.15.0"
-    eslint: "npm:^8.47.0"
+    eslint: "npm:^8.49.0"
     jsonc-parser: "npm:^3.2.0"
     prettier: "npm:^3.0.2"
     typescript: "npm:^5.1.6"
