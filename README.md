@@ -37,7 +37,7 @@ import "library"; // => packages/library/src/index.ts
 // packages/library/package.json
 {
   "name": "library",
-  "main": "./lib/index.js"
+  "main": "./lib/index.js",
 }
 ```
 
@@ -46,8 +46,8 @@ import "library"; // => packages/library/src/index.ts
 {
   "compilerOptions": {
     "rootDir": "./src",
-    "outDir": "./lib"
-  }
+    "outDir": "./lib",
+  },
 }
 ```
 
