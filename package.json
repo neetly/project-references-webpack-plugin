@@ -19,7 +19,7 @@
     "lint:fix": "eslint --max-warnings 0 --fix . && prettier --write ."
   },
   "dependencies": {
-    "jsonc-parser": "3.2.0"
+    "jsonc-parser": "3.2.1"
   },
   "devDependencies": {
     "@babel/cli": "7.23.4",
