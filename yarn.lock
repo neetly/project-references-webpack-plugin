@@ -3959,10 +3959,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jsonc-parser@npm:3.2.0":
-  version: 3.2.0
-  resolution: "jsonc-parser@npm:3.2.0"
-  checksum: 5a12d4d04dad381852476872a29dcee03a57439574e4181d91dca71904fcdcc5e8e4706c0a68a2c61ad9810e1e1c5806b5100d52d3e727b78f5cdc595401045b
+"jsonc-parser@npm:3.2.1":
+  version: 3.2.1
+  resolution: "jsonc-parser@npm:3.2.1"
+  checksum: ada66dec143d7f9cb0e2d0d29c69e9ce40d20f3a4cb96b0c6efb745025ac7f9ba647d7ac0990d0adfc37a2d2ae084a12009a9c833dbdbeadf648879a99b9df89
   languageName: node
   linkType: hard
 
@@ -4643,7 +4643,7 @@ __metadata:
     "@types/node": "npm:20.11.5"
     enhanced-resolve: "npm:5.15.0"
     eslint: "npm:8.56.0"
-    jsonc-parser: "npm:3.2.0"
+    jsonc-parser: "npm:3.2.1"
     prettier: "npm:3.2.4"
     typescript: "npm:5.3.3"
   languageName: unknown
