@@ -28,7 +28,7 @@
     "@neetly/eslint-config": "0.7.0",
     "@neetly/tsconfig": "0.3.0",
     "@types/node": "20.11.24",
-    "enhanced-resolve": "5.15.0",
+    "enhanced-resolve": "5.15.1",
     "eslint": "8.57.0",
     "prettier": "3.2.4",
     "typescript": "5.3.3"
