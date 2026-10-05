@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/cli": "7.24.1",
-    "@babel/core": "7.24.4",
+    "@babel/core": "7.29.6",
     "@neetly/babel-preset": "0.3.0",
     "@neetly/eslint-config": "0.7.0",
     "@neetly/tsconfig": "0.3.0",
